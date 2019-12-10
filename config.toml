@@ -3,7 +3,7 @@
 # Page settings
 # most thing to change in "config" and "content"
 
-baseurl = "/"
+baseurl = "/CVwebsite/"
 languageCode = "en-us"
 title = "Qingyang Liu Resume"
 theme = "hugo-orbit-theme"
