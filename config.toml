@@ -64,7 +64,7 @@ disable404 = true
          [[params.contact.list]]
         class = "email"
         icon = "fab fa-file"
-        url = "/Qingyang_Liu_CV.pdf"
+        url = "/CVwebsite/Qingyang_Liu_CV.pdf"
         title = "CV"
        
 
