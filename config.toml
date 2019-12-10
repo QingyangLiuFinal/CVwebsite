@@ -1,0 +1,206 @@
+#re-open the website: library(blogdown); serve_site() - make sure set the working directory
+
+# Page settings
+# most thing to change in "config" and "content"
+
+baseurl = "/"
+languageCode = "en-us"
+title = "Qingyang Liu Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+publishDir = "docs/"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Qingyang Liu"
+        tagline = "Graduate Student"
+        avatar = "QYL.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "far fa-paper-plane"
+        url = "mailto: finalshampoo@gmail.com"
+        title = "qliu@albany.com"
+
+        [[params.contact.list]]
+        class = "Graduate Student Association Description"
+        icon = "fa-play-circle"
+        url = "//www.albany.edu/gsa/eboard_vp.shtml"
+        title = "Qingyang Liu's GSA Biography"
+
+        [[params.contact.list]]
+        class = "Facebook"
+        icon = "fab fa-facebook-square"
+        url = "//www.facebook.com/qingyang.liu.908"
+        title = "Qingyang Liu"
+        
+         [[params.contact.list]]
+        class = "email"
+        icon = "fab fa-file"
+        url = "/Qingyang_Liu_CV.pdf"
+        title = "CV"
+       
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BA in Psychology "
+        college = "San Fracisco State University"
+        dates = "2016 - 2018"
+
+        [[params.education.list]]
+        degree = "BA in Applied Psychology"
+        college = "Guangzhou Medical University"
+        dates = "2014 - 2018"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Mandarian"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "Cantonese"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Hiking"
+
+        [[params.interests.list]]
+        interest = "Reading"
+
+        [[params.interests.list]]
+        interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** Qingyang Liu is a Master student in Educational Psychology and Methodology at the School of Education, University at Albany. Qingyang earned her B.A. from both San Francisco State University and Guangzhou Medical University, China in 2018, majoring in Psychology. Currently, her research interests focus on executive function, inhibitory control, intrinsic motivation and learning outcome. In addition, she enjoys watching NBA and playing sports (e.g., badminton, swimming, jogging), traveling, reading, hiking.  "
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Research Assistant"
+        dates = "2018 - Present"
+        company = "Social Cognition in Pre-schoolers Lab, UAlbany"
+        details = "Write, review, and edit manuscripts pertaining to preschoolers' moral development. Collaborate with other professionals on research projects involving at-risk preschoolers' executive function, self-regulation, inhibitory control. Develop and conduct presentations at cognitive developmental conferences. Disseminate findings at local and national conferences."
+
+        [[params.jobs.list]]
+        position = "Student Assistnat"
+        dates = "July 2019 - Present"
+        company = "Office for People with Developmental Disabilities, Albany, NY"
+        details = "Analyze quantitative data (300+ cases) collected by National Core Indicator on Staff Stability Survey related to New York State Direct Support Provider. Review, write and edit manuscripts pertaining to theories in diverse factors effect on health care staff tenure and turnover rate. Create user guides for non-profit voluntary organization to better provide services for disabilities people. Conduct literature review on disabilities people needs Index and forecasting, then analyze suitable methodology."
+
+        [[params.jobs.list]]
+        position = "Intern Journalist"
+        dates = "June 2018 - August 2018"
+        company = "Guangzhou Broadcasting Network, China"
+        details = "Support and participate everyday live news broadcasts “HuaCheng Government” with program content creation, interview production. Wrote, edited and produced 4 -5 radio news manuscripts per week for daily news broadcasts. Participate broadcast recording in “Voice of Youth in China’s New Era”."
+
+    # Publication section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Publications"
+        intro = "**This section contains manuscripts in press, under review or in preparation**"
+
+        [[params.projects.list]]
+        tagline = "Baker, E. R., Huang, R., **Liu, Q. Y**., & Batista, C., (in preparation). Poverty Exposure and Children’s Executive Functions: Moderation and Mediation by Parental Financial Strain"
+
+        [[params.projects.list]]
+        tagline = "Baker, E. R., **Liu, Q. Y**., & Huang, R., (in press). A view from the start: A review of Inhibitory Control Training in Early Childhood"
+
+        [[params.projects.list]]
+        tagline = "Baker, E. R., **Liu, Q. Y**., & Meyer, M., (under review). Moral reasoning and moral behavior: Intersections of reasoning with aggressive forms and functions in early childhood."
+
+
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "R Studio"
+        level = "70%"
+                
+        [[params.skills.list]]
+        skill = "SPSS"
+        level = "65%"
+
+        [[params.skills.list]]
+        skill = "Adobe Audition"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "PsychoPy"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "Literature Review"
+        level = "80%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
